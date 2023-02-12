@@ -1,0 +1,282 @@
+@import 'fonts.css';
+:root {
+    --blue: #85CCDC;
+    --white: #ffff;
+    --black: #0E0E0E;
+    --red: #600E09;
+    --rob: 'Roboto';
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    background: var(--black);
+    font-family: 'Roboto';
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.header{
+    margin-top: 50px;
+    background: url(../img/viking__poster.jpg) center no-repeat;
+    max-width: 1920px;
+    height: 1030px;  
+    position: relative;    
+    
+}
+
+footer{
+    display: none;
+}
+.season{
+font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+color: var(--white);
+font-family: var(--rob);
+
+}
+.header__nav{
+    display: grid;
+    grid-template-columns: repeat(6, 138px);
+    margin-top: -20px;
+    position: absolute;
+    transition: 1s;
+        }
+
+.season:hover{
+    color: var(--blue);
+    border-bottom: var(--blue);
+    text-decoration: underline;
+}        
+.header .container{
+    display: flex;
+    justify-content: center;
+    }
+
+.header__logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 263px;
+    width: 100%;
+    max-width: 880px;
+}
+
+.about__title{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: var(--rob);
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+color: #ffff;
+}
+.about__text{
+font-family: var(--white);
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #E5E5E5;
+}
+.about__text1{
+font-family: var(--rob);
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+max-width: 775px;}
+.about .container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 104px;
+}
+.storm{
+    background: url(../img/beard__poster.jpg) center no-repeat;
+    max-width: 1920px;
+    height: 1080px;
+}
+.storm__text{
+    font-family: var(--rob);
+font-style: italic;
+font-weight: 300;
+font-size: 72px;
+line-height: 84px;
+color: var(--blue);
+position: absolute;
+left: 760px;
+top: 2097px;
+}
+.storm__text1{
+    font-family: var(--rob);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 84px;
+    color: var(--blue);
+    position: absolute;
+    left: 1012px;
+    top: 2181px; 
+}
+.youtube{
+    position: absolute;
+    left: 760px;
+    top: 2265px;
+    }
+
+.storm__yotube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.storm__text2{
+    font-family: var(--rob);
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+position: absolute;
+left: 872px;
+top: 2305px;
+}
+
+.serias__title{
+    font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+color: var(--white);
+margin-top: 100px;
+display: flex;
+justify-content: center;
+margin-bottom: 100px;
+}
+
+.serias .container{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 75px;
+}
+
+
+.item img{
+    transition: 0.5s;
+    position: relative;
+    z-index: 0;
+    max-width: 350px;
+    height: 250px;
+}
+.item img:hover{
+    opacity: 0.3;
+    z-index: -1;
+}
+.item a{
+    color: #FFFFFF;
+    padding: 12px 78px;
+    background-color: #000;
+    transition: 1s;
+    position: absolute;
+    text-align: center;
+    top: 94px;
+    left: 27px;
+    font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+    }
+.item{
+    position: relative;
+}
+.item p{
+position: absolute;
+font-weight: 700;
+font-size: 96px;
+line-height: 112px;
+color: #600E09;
+left: 0px;
+top: -72px;
+}
+.serias{
+    margin-bottom: 200px;
+}
+.heroes h3{
+text-align: center;
+font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+color: #FFFFFF;
+font-family: var(--rob);
+margin-bottom: 100px;
+}
+.heroes__content{
+display: flex;
+justify-content: space-between;
+margin-bottom: 100px;
+}
+.heroes__left{
+    max-width: 775px;
+    position: relative;
+}
+.heroes__right{
+    max-width: 350px;
+}
+.heroes__banner{
+    z-index: -1;
+   }
+.cursor1{
+    position: absolute;
+    top: 213px;
+    left: 37px;
+    
+}
+.cursor2{
+    position: absolute;
+    top: 213px;
+    left: 701px;
+    
+}
+.heroes__right h2{
+font-family: var(--rob);
+color: var(--blue);
+font-style: italic;
+font-weight: 300;
+font-size: 72px;
+line-height: 84px;
+margin-bottom: 44px;
+}
+.heroes__text{
+font-family: var(--rob);
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+max-width: 349px;
+}
+.footer{
+font-family: var(--rob);
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+text-align: center;
+padding: 14px;
+}

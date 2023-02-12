@@ -1,0 +1,170 @@
+@import 'fonts.css';
+:root {
+    --blue: #85CCDC;
+    --white: #ffff;
+    --black: #0E0E0E;
+    --red: #600E09;
+    --rob: 'Roboto';
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    background: var(--black);
+    font-family: 'Roboto';
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 134px;
+   
+}
+.header{
+    background: url(img/2page/poster2.png) center no-repeat;
+    max-width: 1920px;
+    height: 1030px;  
+     
+    
+}
+
+.season{
+font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+color: var(--white);
+font-family: var(--rob);
+
+}
+.header__nav{
+    display: grid;
+    grid-template-columns: repeat(6, 138px);
+    transition: 1s;
+    margin-top: 40px;  
+        }
+.logo2{
+    margin-top: 40px;
+}
+.about__season__text1{
+    font-family: var(--rob);
+    font-weight: 700;
+font-size: 96px;
+line-height: 112px;
+color: var(--white);
+position: relative;
+}
+.text__span{
+font-family: var(--rob);
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+color: var(--white);
+position: absolute;
+top: 80px;
+}
+.about__season__text2{
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+font-family: var(--rob);
+color: var(--white);
+max-width: 1158px;
+}
+.about__season__text{
+    display: flex;
+    gap: 51px;
+}
+.about__season1{
+    padding: 45px 47px 64px 37px;
+    background: #000;
+    max-width: 1158px;
+    
+    }
+.about__season{
+    display: flex;
+    justify-content: center;
+    margin-top: -423px;
+}
+
+.season:hover{
+    color: var(--blue);
+    border-bottom: var(--blue);
+    text-decoration: underline;
+}        
+.header .container{
+    display: flex;
+    justify-content: center;
+    }
+
+
+.serias__title{
+    font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+color: var(--white);
+margin-top: 100px;
+display: flex;
+justify-content: center;
+margin-bottom: 100px;
+}
+
+.serias .container{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 75px;
+}
+
+
+.item img{
+    transition: 0.5s;
+    position: relative;
+    z-index: 0;
+    max-width: 350px;
+    height: 250px;
+}
+.item img:hover{
+    opacity: 0.3;
+    z-index: -1;
+}
+.item a{
+    color: #FFFFFF;
+    padding: 12px 78px;
+    background-color: #000;
+    transition: 1s;
+    position: absolute;
+    text-align: center;
+    top: 94px;
+    left: 27px;
+    font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+    }
+.item{
+    position: relative;
+}
+.item p{
+position: absolute;
+font-weight: 700;
+font-size: 96px;
+line-height: 112px;
+color: #600E09;
+left: 0px;
+top: -72px;
+}
+.serias{
+    margin-bottom: 200px;
+}
